@@ -55,6 +55,9 @@ p{
     
     color: black;
 }
+.button i{
+    color: whitesmoke;
+}
 .hero-image{
     width: 50%;
     padding-right: 104px;
@@ -183,4 +186,124 @@ p{
     font-size: 32px;
     color: gray;
 }
+
+/* responsive css */
+
+/* tablet devices */
+
+@media only screen and (max-width: 688px){
+    .hero{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-info{
+     
+        padding-bottom: 50px;
+        padding-left: 10px;
+   }
+    .hero-info h1{
+        font-size: 24px;
+        line-height: 30px;
+        color: whitesmoke;
+    }
+    
+     .hero-image{
+        width: 100%;
+        padding: 20px;
+    }
+    .hero-image img{
+        width: 329px;
+        height: 259px;
+        transition: transform 2s ease;
+    }
+   
+    .football-blogs{
+        width: 100%;
+       grid-template-columns: repeat(1, 1fr);
+              
+    }
+    .latest-news{
+        
+        flex-direction: column;
+       
+    }
+    .news{
+        margin-bottom: 50px;
+        padding: 40px;
+    }
+     .news-heading h1{
+         font-size: 25px;
+         font-weight: 700;
+            }
+ 
+     .news-image img{
+         width: 320px;
+         height: auto;
+         
+     }
+     .leagues{
+         width: 100%;
+         padding: 20px;
+     
+     }
+     .league-icons{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+
+     }
+    
+     
+ 
+}
+
+    /* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .football-blogs{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+    .blog{
+        flex-direction: column;
+        
+    }
+  
+    .player-image img{
+        width: 250px;
+        height: 156px;
+        transition: transform 2s ease;
+    }
+
+    .latest-news{
+        
+        flex-direction: column;
+       
+    }
+    
+   .news{
+       margin-bottom: 50px;
+   }
+    .news-heading h1{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 80px;
+    }
+
+    .news-image img{
+        width: 556px;
+        height: 427px;
+        
+    }
+    .leagues{
+        width: 100%;
+        padding: 20px;
+    
+    }
+
+
+}
+
+
 

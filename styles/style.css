@@ -2,14 +2,70 @@
 
 /* global css */
 
+body{
+    margin: 0;
+}
 main{
+    
     font-family: 'Poppins', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 p{
     color: #6C6C6C;;
+}
+
+/* hero section  */
+.hero{
+    width: 100%;
+    margin-bottom: 80px;
+    padding-top: 86px;
+    padding-bottom: 86px;
+    display: flex;
+    background-color: #2D25A0;
+    
+}
+.hero-info{
+    width: 50%;
+    padding-left: 156px;
+    padding-right: 50px;
+   
+   
+}
+.hero-info h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: whitesmoke;
+}
+.button {
+    width: 168px;
+    text-align: center;
+    padding: 15px;
+    background-color: #E02C6D;
+}
+
+.button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.button a:hover{
+    
+    color: black;
+}
+.hero-image{
+    width: 50%;
+    padding-right: 104px;
+}
+.hero-image img{
+    width: 556px;
+    height: 438px;
+    transition: transform 2s ease;
+}
+.hero:hover>.hero-image img{
+    transform: scale(1.1)
 }
 
 /* blog css */
@@ -25,10 +81,15 @@ p{
 .blog{
     padding: 15px;
     box-shadow: 0 0 5px 5px rgb(224, 224, 224);
+    
+}
+.blog:hover>.player-image img{
+    transform: scale(1.1);
 }
 .player-image img{
     width: 300px;
     height: 256px;
+    transition: transform 2s ease;
 }
 .player-info h2{
     font-weight: 700;
@@ -36,11 +97,90 @@ p{
     line-height: 40px;
 
 }
+/* news style */
+
+
+.latest-news{
+    margin-bottom: 10px;
+    padding-top: 86px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.news{
+   
+    padding-left: 156px;
+    padding-right: 50px;
+    
+ 
+}
+.news-heading h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.news-image{
+    width: 50%;
+    padding-right: 104px;
+}
+.news-image img{
+    width: 556px;
+    height: 427px;
+    
+}
+ 
+/* League info */
+.leagues{
+    width: 1050px;
+    padding: 100px;
+
+}
+.leagues h2{
+    font-weight: 64px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.league-icons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.league{
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin: 10px;
+}
+.league-icons img{
+    width: 100px;
+    height: 100px;
+    transition: transform 2s ease;
+
+}
+.league-icons img:hover{
+    transform: scale(1.3);
+
+}
 
 /* footer css  */
+.site-footer{
+    margin-top: 63px;
+    margin-bottom: 63px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
 .footer-logo img{
-    width: 484px;
-    height: 110px;
+    width: 284px;
+    height: 70px;
+}
+.social-icon i{
+    font-size: 32px;
+    color: gray;
 }
 
